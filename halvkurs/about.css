@@ -1,0 +1,85 @@
+header, main, footer{
+    background-color: ghostwhite;
+    border: 2px solid black;
+    margin: 2rem;
+}
+
+header, footer{
+    padding: 1rem;
+
+}
+
+main{
+    padding: 5%;
+    gap: 20px;
+}
+
+
+
+
+
+nav{
+    padding: 1%;
+    display: grid;
+    gap: 5%;
+    place-items: center;
+}
+
+nav a{
+    font-family:cursive;
+    text-decoration: none; 
+    border-radius: 25%;
+    transition: background-color 0.4s;
+}
+
+nav a:hover{
+    background-color: gainsboro;
+
+}
+
+.menuButton{
+    font-size: 3rem;
+}
+
+
+.hidden{
+    display:none;
+}
+
+
+@media (min-width:600px){
+
+    nav{
+        grid-template-columns:repeat(3, 1fr);
+
+
+    }
+
+    #nav{
+        display:grid;
+        
+    }
+    
+    .menuButton{
+        display: none;
+    }
+
+}
+
+
+@media (max-width:600px){
+
+    header{
+        padding: 0.5rem;
+    }
+
+}
+
+
+
+html{
+scroll-behavior: smooth;
+background-color: gainsboro;
+}
+
+
