@@ -1,30 +1,66 @@
 header, main, footer{
     background-color: ghostwhite;
     border: 2px solid black;
-    margin: 1rem;
+    margin: 5px;
 }
 
 header, footer{
     padding: 1rem;
-
 }
+
+
+
+
 .textbox, .desc{
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-family:Cambria
 }
 
 
-main{
+
+
+nav{
+    padding: 1%;
+    display: grid;
+    gap: 5%;
+    place-items: center;
+}
+
+nav a{
+    font-family:cursive;
+    text-decoration: none; 
+    transition: background-color 0.4s;
+}
+
+nav a:hover{
+    text-shadow: 2px 1px  lightgray;
+}
+
+
+.menuButton{
+    font-size: 3rem;
+}
+
+.hidden{
+    display:none;
+}
+
+
+
+
+
+
+.cards{
     padding: 5%;
     gap: 20px;
 }
-
-
 
 .card{
     border: 3px solid darkblue;
     padding: 5px;
 }
+
 
 .imgbox{
     aspect-ratio: 1/1;
@@ -53,37 +89,73 @@ main{
     transform: scale(1.05)
 }
 
-nav{
-    padding: 1%;
-    display: grid;
-    gap: 5%;
-    place-items: center;
-}
 
-nav a{
-    font-family:cursive;
-    text-decoration: none; 
-    border-radius: 25%;
-    transition: background-color 0.4s;
-}
 
-nav a:hover{
-    background-color: gainsboro;
+
+
+
+.misc{
+    margin: 2rem;
+    border: solid 2px black;
+    background-color:ghostwhite;
 
 }
 
+.box, .content{
+    padding: 4px;
+    min-height: 30vh;
+    gap: 15px;
+}
 
+.div1{background-color: darkslategray;}
+.div2{background-color: darkslategray;}
+.div3{background-color: darkslategray;}
+.div4{background-color: darkslategray;}
+.div5{background-color: darkslategray;}
+.div6{background-color: darkslategray;}
+.div7{background-color: darkslategray;}
+.div8{background-color: darkslategray;}
+.div9{background-color: darkslategray;}
+.div10{background-color:darkslategray;}
 
-
-
-.menuButton{
-    font-size: 3rem;
+.box{
+    display: grid;    
+    grid-template-columns: repeat(10, 40vw);  
+    overflow-x: scroll;    
+    scroll-snap-type: x mandatory;  
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 
-.hidden{
-    display:none;
+.content{
+    scroll-snap-align: center;  
+    aspect-ratio: 3/4;
+    margin: 5px;
+    padding: 10px;
+    transition: background-color 0.8s; 
 }
+
+.content:hover{
+    background-color:dimgrey;
+}
+
+
+.content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: scale(1);
+    transition: transform 0.8s;
+}
+
+.content img:hover{
+    transform: scale(1.05)
+}
+
+
+
 
 
 
@@ -91,40 +163,63 @@ nav a:hover{
 
     nav{
         grid-template-columns:repeat(3, 1fr);
-
-
     }
-
 
     #nav{
         display:grid;
-        
     }
     
-
     .menuButton{
         display: none;
     }
 
-
 }
-
 
 @media (min-width:700px){
 
-    main{
+    .cards{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     }
 
-}
+    .box, .content{
+    min-height: 18vh;
+    }
+    
+    .box{
+    grid-template-columns: repeat(10, 24vw);  
+    }
 
+}
 
 @media (min-width:900px){
 
-    main{
+    .cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
+    }
+
+
+    .box, .content{
+    min-height: 12vh;
+    }
+    
+    .box{
+    grid-template-columns: repeat(10, 16vw);  
+    margin-left: 10%;
+    margin-right: 10%;
+    }
+
+}
+
+@media (min-width:1100px){
+
+    .box, .content{
+    min-height: 6vh;
+    }
+    
+    .box{
+    grid-template-columns: repeat(10, 8vw); 
     }
 
 }
@@ -137,9 +232,10 @@ nav a:hover{
 
 }
 
+
+
+
 html{
-scroll-behavior: smooth;
+scroll-behavior:smooth;
 background-color: gainsboro;
 }
-
-
