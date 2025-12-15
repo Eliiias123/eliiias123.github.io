@@ -1,15 +1,13 @@
+header, main, footer{
+    background-color: ghostwhite;
+    border: 2px solid black;
+    margin: 2rem;
+}
 
 header, footer{
     padding: 1rem;
 
 }
-
-main{
-    padding: 5%;
-    gap: 20px;
-}
-
-
 
 
 nav{
