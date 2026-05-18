@@ -1,0 +1,132 @@
+.mainHeader {
+  padding: 3%;
+}
+
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.logo {
+  width: clamp(80px, 10vw, 150px);
+  object-fit: cover;
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1%;
+  }
+
+  .header-top {
+    padding: 0;
+  }
+
+  .menubutton {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  header nav.hidden {
+    height: auto;
+    padding: revert;
+    margin-left: 0;
+    overflow: visible;
+  }
+}
+
+
+
+
+nav.mainNav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav.mainNav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+nav ul li a {
+  font-family: cursive;
+  font-size: 20px;
+}
+
+header span {
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+}
+
+.menubutton {
+  transition: opacity 2s ease;
+}
+
+header nav {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  transition: all 1s;
+
+  a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+  }
+}
+
+.hidden {
+  height: 0px;
+  padding: 0;
+  margin-left: -100vw;
+  overflow: hidden;
+}
+
+@media (min-width: 600px) {
+  .mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+  }
+
+  #nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    width: auto;
+  }
+
+  .menubutton {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  header nav.hidden {
+    height: auto;
+    padding: revert;
+    margin-left: 0;
+    overflow: visible;
+  }
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260">
+  <rect width="400" height="260" fill="#111"/>
+  <!-- Star sparkles -->
+  <text x="50"  y="55"  font-size="18" fill="rgba(255,215,0,0.5)" text-anchor="middle">✦</text>
+  <text x="350" y="75"  font-size="14" fill="rgba(255,215,0,0.4)" text-anchor="middle">✦</text>
+  <text x="85"  y="215" font-size="12" fill="rgba(255,215,0,0.35)" text-anchor="middle">✦</text>
+  <text x="320" y="210" font-size="16" fill="rgba(255,215,0,0.45)" text-anchor="middle">✦</text>
+  <text x="200" y="30"  font-size="10" fill="rgba(255,215,0,0.4)" text-anchor="middle">✦</text>
+  <!-- Car body -->
+  <rect x="80" y="140" width="240" height="60" rx="8" fill="#2a2a2a"/>
+  <path d="M120 140 Q140 100 180 95 L220 95 Q260 100 280 140Z" fill="#2a2a2a"/>
+  <!-- Windows -->
+  <path d="M130 138 Q145 108 175 104 L195 104 L195 138Z" fill="#1a1a1a"/>
+  <path d="M205 138 L205 104 L225 104 Q255 108 270 138Z" fill="#1a1a1a"/>
+  <!-- Wheels -->
+  <circle cx="130" cy="200" r="22" fill="#1a1a1a"/>
+  <circle cx="130" cy="200" r="12" fill="#2a2a2a"/>
+  <circle cx="130" cy="200" r="5" fill="rgba(255,215,0,0.5)"/>
+  <circle cx="270" cy="200" r="22" fill="#1a1a1a"/>
+  <circle cx="270" cy="200" r="12" fill="#2a2a2a"/>
+  <circle cx="270" cy="200" r="5" fill="rgba(255,215,0,0.5)"/>
+  <!-- Gold shine sweep across car -->
+  <path d="M95 145 Q160 125 200 130 Q240 135 305 155" stroke="rgba(255,215,0,0.35)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M100 158 Q160 140 200 145 Q240 150 300 165" stroke="rgba(255,215,0,0.2)" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Polishing mitt -->
+  <ellipse cx="310" cy="120" rx="22" ry="16" fill="rgba(255,215,0,0.15)" stroke="rgba(255,215,0,0.3)" stroke-width="1.5"/>
+  <line x1="310" y1="136" x2="310" y2="155" stroke="rgba(255,215,0,0.25)" stroke-width="2"/>
+  <!-- Label -->
+  <text x="200" y="245" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" fill="rgba(255,215,0,0.35)" letter-spacing="3">ULTIMATE DETAIL</text>
+</svg>

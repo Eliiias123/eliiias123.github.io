@@ -1,0 +1,19 @@
+.faq {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 1rem;
+  border-top: 2px solid black;
+}
+
+.faq h2 {
+  place-self: center;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.faq-item {
+  padding: 1rem;
+  border-bottom: 4px solid #c8102e;
+  border-left: 3px solid #c8102e;
+}

@@ -1,13 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>slutprojekt</title>
-</head>
-<body>
-    
-    <h1>slutprojekt</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorem Ipsum</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Font Awesome -->
+  </head>
+  <body>
 
-</body>
+
+    
+    <div class="ticker">
+      <div class="ticker-track">
+        <span>Hand wash only</span>
+        <span>Free re-wash within 24h</span>
+        <span>Book online — no waiting</span>
+        <span>Open Mon–Sat 08:00–18:00</span>
+      </div>
+    </div>
+
+    <div class="logo">
+      <a href="/">
+        <img src="/pictures/loremlogo.png" alt="Logo" />
+      </a>
+    </div>   
+
+
+
+
+    <header
+      hx-get="/components/header.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></header>
+
+
+    <main
+      hx-get="/components/main.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></main>
+
+    <footer
+      hx-get="/components/footer.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></footer>
+  </body>
 </html>

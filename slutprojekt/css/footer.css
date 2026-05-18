@@ -1,0 +1,27 @@
+.textbox {
+  border-top: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.footertext {
+  padding: 1rem;
+  text-align: center;
+  background-color: #111;
+  color: white;
+}
+
+.footertext h3 {
+  background-color: #111;
+  font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+  .textbox {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
